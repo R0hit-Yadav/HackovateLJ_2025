@@ -1,0 +1,86 @@
+.booking-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .labour-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-section img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .info-section h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .info-section p {
+    margin: 5px 0;
+  }
+  
+  .fee span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .booking-section {
+    margin-top: 20px;
+  }
+  
+  .date-container,
+  .time-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .date-btn,
+  .time-btn {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .date-btn.active,
+  .time-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .book-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+  }

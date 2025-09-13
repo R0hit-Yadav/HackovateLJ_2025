@@ -1,0 +1,486 @@
+/* Enhanced Home.css - Farmer-friendly design */
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #2d5016 0%, #4a7c59 50%, #a8e6cf 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  padding-top: 110px;
+
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="grain" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="20" fill="url(%23grain)"/></svg>') repeat;
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.greeting {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-family: 'Devanagari Sangam MN', Arial, sans-serif;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e8f5e8;
+  letter-spacing: 0.5px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #f0f9f0;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Feature Pills */
+.feature-pills {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.feature-pill {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.pill-icon {
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.pill-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pill-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.pill-description {
+  font-size: 0.75rem;
+  color: #e8f5e8;
+}
+
+/* Services Section */
+.services-section {
+  background: linear-gradient(to bottom, #f8fdf8 0%, #e8f5e8 100%);
+  padding: 80px 20px;
+  position: relative;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #4a7c59, #7cb342, #4a7c59);
+  border-radius: 2px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 12px;
+  font-family: 'Devanagari Sangam MN', Arial, sans-serif;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #5d7c5d;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+.service-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 32px rgba(45, 80, 22, 0.1);
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transition: all 0.3s ease;
+}
+
+.disease-card::before {
+  background: linear-gradient(90deg, #ff6b6b, #ffa726);
+}
+
+.weather-card::before {
+  background: linear-gradient(90deg, #42a5f5, #66bb6a);
+}
+
+.chatbot-card::before {
+  background: linear-gradient(90deg, #ab47bc, #7e57c2);
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 48px rgba(45, 80, 22, 0.2);
+}
+
+.service-card:hover::before {
+  height: 100%;
+  opacity: 0.05;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon-wrapper {
+  padding: 16px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.disease-card .icon-wrapper {
+  background: linear-gradient(135deg, #ff6b6b, #ffa726);
+  color: white;
+}
+
+.weather-card .icon-wrapper {
+  background: linear-gradient(135deg, #42a5f5, #66bb6a);
+  color: white;
+}
+
+.chatbot-card .icon-wrapper {
+  background: linear-gradient(135deg, #ab47bc, #7e57c2);
+  color: white;
+}
+
+.stats-badge {
+  background: rgba(45, 80, 22, 0.1);
+  color: #2d5016;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Card Body */
+.card-body {
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.card-description {
+  color: #5d7c5d;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f8fdf8, #e8f5e8);
+  border-radius: 12px;
+  margin: 24px -8px 0;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .card-action {
+  background: linear-gradient(135deg, #e8f5e8, #d4f4d4);
+  transform: translateX(4px);
+}
+
+.action-text {
+  font-weight: 600;
+  color: #2d5016;
+  font-size: 1rem;
+}
+
+.action-arrow {
+  font-size: 1.2rem;
+  color: #4a7c59;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .action-arrow {
+  transform: translateX(4px);
+}
+
+/* Decorative Elements */
+.card-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 0 24px 0 100px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.deco-1 {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+}
+
+.deco-2 {
+  width: 12px;
+  height: 12px;
+  top: 40px;
+  right: 25px;
+}
+
+.deco-3 {
+  width: 8px;
+  height: 8px;
+  top: 25px;
+  right: 45px;
+}
+
+.disease-card .card-decoration {
+  color: #ff6b6b;
+}
+
+.weather-card .card-decoration {
+  color: #42a5f5;
+}
+
+.chatbot-card .card-decoration {
+  color: #ab47bc;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #2d5016, #4a7c59);
+  padding: 60px 20px;
+  position: relative;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
+}
+
+.stats-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.stat-item {
+  text-align: center;
+  color: white;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #ffffff, #a8e6cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.3), transparent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+  }
+  
+  .feature-pills {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  
+  .service-card {
+    padding: 24px;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .stat-divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0 16px;
+  }
+  
+  .services-section {
+    padding: 60px 16px;
+  }
+  
+  .greeting {
+    font-size: 1.8rem;
+  }
+  
+  .feature-pill {
+    padding: 10px 16px;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
