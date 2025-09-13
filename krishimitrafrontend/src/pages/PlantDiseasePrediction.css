@@ -1,0 +1,203 @@
+/* Background */
+.prediction-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 120px 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card */
+.card1 {
+  width: 100%;
+  max-width: 950px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Header */
+.card-header1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.card-header1 .icon.big {
+  color: #16a34a;
+  width: 32px;
+  height: 32px;
+}
+
+.card-header1 h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Content */
+.card-content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* Upload Box */
+.upload-box1 {
+  border: 2px dashed #86efac;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f0fdf4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-box1:hover {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+
+.upload-box1 span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Webcam */
+.webcam-container1 {
+  margin-top: 20px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.webcam-container1 video {
+  width: 100%;
+  display: block;
+}
+
+.camera-btn {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.camera-btn:hover {
+  background: #15803d;
+}
+
+/* Preview */
+.preview1 {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.preview1 img {
+  width: 100%;
+  display: block;
+}
+
+/* Analyze Button */
+.analyze-btn {
+  margin-top: 18px;
+  width: 100%;
+  background: #16a34a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.analyze-btn:hover {
+  background: #15803d;
+}
+
+.analyze-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Loader */
+.loader {
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Results Box */
+.results-box1 {
+  margin-top: 20px;
+  background: #ecfdf5;
+  border-left: 5px solid #16a34a;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.results-box1 h3 {
+  font-size: 16px;
+  color: #166534;
+  margin-bottom: 4px;
+}
+
+.results-box1 p {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-content1 {
+    grid-template-columns: 1fr;
+  }
+}

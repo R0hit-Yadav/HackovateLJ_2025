@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Chatbot from "./pages/Chatbot";
+import PlantDiseasePrediction from './pages/PlantDiseasePrediction';
+import Weather from "./pages/Weather";
+// import CropPrediction from "./pages/CropPrediction";
+import News from "./pages/News";
+import Expenses from "./pages/Expenses";
+import Dashboard from "./pages/Dashboard";
+// import Login from './pages/Login';
+import Scheme from './pages/Scheme';
+import SchemeDetails from './pages/SchemeDetails';
+import AgricultureEducation from './pages/AgriculturalEducation';
+import LaborRegistrationForm from './pages/LaborRegistrationForm';
+import LabourAppointment from './pages/LabourAppointment';
+import BookAppointment from './pages/BookAppointment';
+import KrishimitraLanding from './pages/Landingpage';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <Router>
+        <Routes>
+                {/* <Route path="/" element={<Login />} /> */}
+                <Route path="/chatbot" element={<Chatbot />} />
+                <Route path="/PlantDiseasePrediction" element={<PlantDiseasePrediction />} />
+                <Route path="/weather" element={<Weather />} />
+                {/* <Route path="/crop-prediction" element={<CropPrediction />} /> */}
+                <Route path="/news" element={<News />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/learning" element={<AgricultureEducation />} />
+                <Route path="/expenses" element={<Expenses />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/scheme" element={<Scheme />} />
+                <Route path="/scheme/:id" element={<SchemeDetails />} />
+                <Route path="/labourform" element={<LaborRegistrationForm />} />
+                <Route path="/appointment" element={<LabourAppointment />} />
+                {/* <Route path="/bookappointment" element={<BookAppointment />} /> */}
+                <Route path="/krishimitra" element={<KrishimitraLanding />} />
+        </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
