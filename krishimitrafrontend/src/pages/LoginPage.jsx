@@ -128,7 +128,7 @@ const LoginPage = () => {
           localStorage.setItem("phone_no", formData.mobile);
           
           alert("Login successful!");
-          navigate("/");
+          navigate("/home");
 
         } catch (dbErr) {
           if (dbErr.response) {
@@ -164,9 +164,9 @@ const LoginPage = () => {
 
         {/* Form */}
         <div className="form-section">
-          {/* Username Field */}
+          {/* Name Field */}
           <div className="form-group">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Name</label>
             <input
               type="text"
               id="username"

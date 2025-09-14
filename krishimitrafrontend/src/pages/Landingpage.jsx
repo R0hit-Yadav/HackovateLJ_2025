@@ -74,7 +74,7 @@ const KrishimitraLanding = () => {
   };
 
   const handleCardClick = (page) => {
-    alert(`Redirecting to ${page}`);
+    alert(`Please First Login`);
   };
 
   const handleLoginClick = () => {
@@ -176,7 +176,7 @@ const KrishimitraLanding = () => {
         <div className="login-inner">
           <h2>Ready to Transform Your Farming?</h2>
           <p>Join thousands of farmers who are already using KrishiMitra to increase their yields and profits</p>
-          <button onClick={handleLoginClick}>Get Started Today</button>
+          <button onClick={handleLoginClick}>Login Now</button>
         </div>
       </section>
 

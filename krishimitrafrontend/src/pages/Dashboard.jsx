@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { User, Phone, Leaf, LogOut } from 'lucide-react';
 import './Dashboard.css';
 import CropCards from './Cards';
@@ -6,6 +7,7 @@ import Logo2 from './logo2.png'
 
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     state: '',
     city: '',
@@ -232,7 +234,7 @@ const Dashboard = () => {
           <NavItem
             item={{ icon: LogOut, label: 'Logout' }}
             isLogout={true}
-            onClick={() => console.log('Logout clicked')}
+            onClick={() => navigate('/')}
           />
         </div>
       </div>
@@ -243,7 +245,6 @@ const Dashboard = () => {
           <h1>Welcome Back!</h1>
           <div className="user-info">
             <User size={32} />
-            <span>John Doe</span>
           </div>
         </header>
         

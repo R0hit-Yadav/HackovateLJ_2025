@@ -7,6 +7,7 @@
   align-items: flex-start;
   padding: 120px 40px 20px;
   font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a2e11 0%, #2d4a1f 30%, #4a6b2d 60%, #6b8a4f 100%);
 }
 
 /* Card */

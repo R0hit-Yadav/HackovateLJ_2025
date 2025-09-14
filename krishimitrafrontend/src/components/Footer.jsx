@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Cloud, Leaf, MessageCircle, Newspaper, MapPin, Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
 import "./Footer.css";
 import logo2 from "./logo2.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
         <div className="footer-grid">
@@ -20,16 +22,16 @@ const Footer = () => {
           <div className="footer-links">
             <h4>Quick Links</h4>
             <ul>
-              <li>Weather Forecast</li>
-              <li>Disease Detection</li>
-              <li>AI Chatbot</li>
-              <li>Agricultural News</li>
+              <li style={{cursor: 'pointer'}} onClick={() => navigate('/weather')}>Weather Forecast</li>
+              <li style={{cursor: 'pointer'}} onClick={() => navigate('/PlantDiseasePrediction')}>Disease Detection</li>
+              <li style={{cursor: 'pointer'}} onClick={() => navigate('/chatbot')}>AI Chatbot</li>
+              <li style={{cursor: 'pointer'}} onClick={() => navigate('/news')}>Agricultural News</li>
             </ul>
           </div>
           <div className="footer-contact">
             <h4>Contact Us</h4>
             <p><MapPin /> Gujarat, India</p>
-            <p><Phone /> +91 12345 67890</p>
+            <p><Phone /> +91 91736 97510</p>
             <p><Mail /> info@krishimitra.com</p>
           </div>
         </div>
