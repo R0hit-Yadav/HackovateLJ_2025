@@ -191,8 +191,8 @@ function SchemeDetails() {
         <a href={scheme.link} target="_blank" rel="noopener noreferrer" className="official-link">
           Official Link
         </a>
-        <Link to="/" className="back-button">
-          Back to Home
+        <Link to="/scheme" className="back-button">
+          Back
         </Link>
       </div>
     </div>

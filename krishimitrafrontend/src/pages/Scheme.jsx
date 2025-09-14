@@ -3,6 +3,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import "./Scheme.css"
+import Layout from "../layout/layout"
 
 const schemesData = [
   {
@@ -118,6 +119,7 @@ function Scheme() {
   const filteredSchemes = filter === "all" ? schemesData : schemesData.filter((scheme) => scheme.type === filter)
 
   return (
+    <Layout>
       <div className="schemes-container">
         <h1 className="schemes-title">Government Schemes for Farmers</h1>
         <div className="filters">
@@ -144,6 +146,7 @@ function Scheme() {
           ))}
         </div>
       </div>
+      </Layout>
   )
 }
 

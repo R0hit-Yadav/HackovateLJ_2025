@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './AgriculturalEducation.css';
-// import Layout from '../layout/layout';
+import Layout from '../layout/layout';
 
 const videoData = [
   {
@@ -277,7 +277,7 @@ const AgriculturalEducation = () => {
       : videoData.filter((video) => video.category === selectedCategory);
 
   return (
-    // <Layout>
+    <Layout>
       <div className="agriedcontainer">
         {/* Filters */}
         <div className="filter-section">
@@ -311,7 +311,7 @@ const AgriculturalEducation = () => {
           ))}
         </div>
       </div>
-    // </Layout>
+    </Layout>
   );
 };
 
