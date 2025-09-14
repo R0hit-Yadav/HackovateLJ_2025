@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { User, Phone, Leaf, LogOut } from 'lucide-react';
 import './Dashboard.css';
+import CropCards from './Cards';
+import Logo2 from './logo2.png'
+
 
 const Dashboard = () => {
   const [formData, setFormData] = useState({
@@ -9,7 +12,7 @@ const Dashboard = () => {
     crops: []
   });
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('profile');
 
   const cropOptions = [
     'Rice','Wheat','Corn','Soybeans','Cotton','Sugarcane','Barley','Oats',
@@ -190,8 +193,13 @@ const Dashboard = () => {
             </div>
           </div>
         );
+
+        case 'cropdetails':
+        return (
+          <CropCards />
+        );
       default:
-        return <div><h1 className="section-title">Page not found</h1></div>;
+        
     }
   };
 
@@ -200,8 +208,14 @@ const Dashboard = () => {
       {/* Sidebar */}
       <div className="sidebar">
         <div className="sidebar-header">
-          <h2>Profile</h2>
-        </div>
+        <a href="/home" className="logo-link">
+          <img 
+            src={Logo2}   // <-- replace with your logo path (e.g., inside public folder)
+            alt="Website Logo" 
+            className="logo-img"
+          />
+        </a>
+      </div>
         
         <nav className="sidebar-nav">
           {menuItems.map((item) => (

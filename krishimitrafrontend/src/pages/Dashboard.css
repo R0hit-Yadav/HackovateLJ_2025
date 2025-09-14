@@ -212,3 +212,23 @@
   margin-left: 0.5rem;
   cursor: pointer;
 }
+
+.sidebar-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo-link {
+  display: inline-block;  
+}
+
+.logo-img {
+  width: 100px;   /* adjust size */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
