@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'agri_app',
+    'authentication',
+    'crops_app',
 ]
 
 MIDDLEWARE = [

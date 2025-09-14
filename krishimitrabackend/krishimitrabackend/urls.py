@@ -16,8 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from rest_framework import routers
+
+from authentication import views as auth_views
+from crops_app import views as crops_view
+
+router = routers.DefaultRouter()
+crops_router = routers.DefaultRouter()
+
+router.register(r'login', auth_views.UserloginView, 'login')
+crops_router.register(r'crops', crops_view.CropsView, 'crops')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('agri_app/', include('agri_app.urls'))
+    path('agri_app/', include('agri_app.urls')),
+    path('api/', include(router.urls)),
+    path('api_crops/', include(crops_router.urls)),
 ]

@@ -17,6 +17,9 @@ import LaborRegistrationForm from './pages/LaborRegistrationForm';
 import LabourAppointment from './pages/LabourAppointment';
 import BookAppointment from './pages/BookAppointment';
 import KrishimitraLanding from './pages/Landingpage';
+import LoginPage from './pages/LoginPage';
+import CropForm from './pages/Profile';
+
 
 
 function App() {
@@ -24,7 +27,7 @@ function App() {
     return (
         <Router>
         <Routes>
-                {/* <Route path="/" element={<Login />} /> */}
+                <Route path="/login" element={<LoginPage />} />
                 <Route path="/chatbot" element={<Chatbot />} />
                 <Route path="/PlantDiseasePrediction" element={<PlantDiseasePrediction />} />
                 <Route path="/weather" element={<Weather />} />
@@ -40,6 +43,8 @@ function App() {
                 <Route path="/appointment" element={<LabourAppointment />} />
                 {/* <Route path="/bookappointment" element={<BookAppointment />} /> */}
                 <Route path="/krishimitra" element={<KrishimitraLanding />} />
+                <Route path="/cropform" element={<CropForm />} />
+
         </Routes>
         </Router>
     );

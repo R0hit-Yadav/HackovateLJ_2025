@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { User, MessageCircle, Newspaper, Phone, Home, Settings, LogOut } from 'lucide-react';
 import Layout from "../layout/layout";
-import './profile.css'
+// import './profile.css'
 
 const Dashboard = () => {
   
