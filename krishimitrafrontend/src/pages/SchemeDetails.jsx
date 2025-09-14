@@ -41,6 +41,17 @@ const schemesData = [
        Required_Documents:"Aadhaar card, Land ownership/tenancy documents, Bank account details",
        Instructions: "Farmers should report crop loss to local authorities and apply through the nearest agriculture office."
   },
+{
+    id: 3,
+    name: " Mukhyamantri Kisan Sahay Yojana",
+    description: "Income support scheme for farmers.",
+    type: "state",
+    link: "https://www.myscheme.gov.in/schemes/mksy",
+    Description:" Provides financial assistance to farmers facing crop loss due to natural calamities.",
+       Eligibility:"All farmers in Gujarat cultivating notified crops.",
+       Required_Documents:"Aadhaar card, Land ownership/tenancy documents, Bank account details",
+       Instructions: "Farmers should report crop loss to local authorities and apply through the nearest agriculture office."
+  },
 
 ]
 
