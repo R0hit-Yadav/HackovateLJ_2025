@@ -17,7 +17,7 @@ const Home = () => {
             description: "AI-powered instant diagnosis of crop diseases. Upload photos and get immediate treatment recommendations with 95% accuracy.",
             icon: <AlertCircle size={32} />,
             colorClass: "disease-card",
-            route: "/crop-disease",
+            route: "/PlantDiseasePrediction",
             stats: "95% Accuracy"
         },
         {
@@ -30,11 +30,11 @@ const Home = () => {
         },
         {
             title: "Farm Assistant",
-            description: "24/7 AI farming expert in Hindi, English & Gujarati. Get personalized advice for crops, irrigation, and agricultural practices.",
+            description: "24/7 AI farming expert in Hindi, English. Get personalized advice for crops, irrigation, and agricultural practices.       ",
             icon: <MessageCircle size={32} />,
             colorClass: "chatbot-card",
-            route: "/chat",
-            stats: "3 Languages"
+            route: "/chatbot",
+            stats: "2 Languages"
         }
     ];
 

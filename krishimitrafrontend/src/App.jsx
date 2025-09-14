@@ -19,6 +19,7 @@ import BookAppointment from './pages/BookAppointment';
 import KrishimitraLanding from './pages/Landingpage';
 import LoginPage from './pages/LoginPage';
 import CropForm from './pages/Profile';
+import CropCards from './pages/Cards';
 
 
 
@@ -27,23 +28,23 @@ function App() {
     return (
         <Router>
         <Routes>
+                <Route path="/" element={<KrishimitraLanding />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/chatbot" element={<Chatbot />} />
                 <Route path="/PlantDiseasePrediction" element={<PlantDiseasePrediction />} />
                 <Route path="/weather" element={<Weather />} />
-                {/* <Route path="/crop-prediction" element={<CropPrediction />} /> */}
                 <Route path="/news" element={<News />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/learning" element={<AgricultureEducation />} />
                 <Route path="/expenses" element={<Expenses />} />
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/scheme" element={<Scheme />} />
                 <Route path="/scheme/:id" element={<SchemeDetails />} />
                 <Route path="/labourform" element={<LaborRegistrationForm />} />
                 <Route path="/appointment" element={<LabourAppointment />} />
                 {/* <Route path="/bookappointment" element={<BookAppointment />} /> */}
-                <Route path="/krishimitra" element={<KrishimitraLanding />} />
                 <Route path="/cropform" element={<CropForm />} />
+                <Route path="/cropcards" element={<CropCards />} />
 
         </Routes>
         </Router>

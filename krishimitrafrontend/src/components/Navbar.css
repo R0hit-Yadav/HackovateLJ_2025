@@ -33,6 +33,7 @@
   align-items: center;
   cursor: pointer;
   gap: 10px;
+  padding-right: 100px;
 }
 
 .logo-icon-nav {
@@ -45,6 +46,9 @@
   justify-content: center;
   color: #2e7d32;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: -80px;
 }
 
 .logo-text {

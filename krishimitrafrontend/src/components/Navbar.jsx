@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   const mainNavItems = [
-    { path: "/", label: "Home", icon: <Home size={18} />, hindi: "होम" },
+    { path: "/home", label: "Home", icon: <Home size={18} />, hindi: "होम" },
     { path: "/weather", label: "Weather", icon: <Cloud size={18} />, hindi: "मौसम" },
     { path: "/chatbot", label: "Chat Assistant", icon: <MessageCircle size={18} />, hindi: "सहायक" },
     { path: "/PlantDiseasePrediction", label: "Diagnosis", icon: <Activity size={18} />, hindi: "निदान" }
@@ -127,11 +127,11 @@ const Navbar = () => {
 
           {/* Login Button */}
           <button 
-            onClick={() => handleNavigate("/login")} 
+            onClick={() => handleNavigate("/dashboard")} 
             className="sign-in-button"
           >
             <User size={16} />
-            <span>Login</span>
+            <span>User</span>
           </button>
         </div>
 

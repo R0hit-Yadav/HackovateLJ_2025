@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, Cloud, Leaf, MessageCircle, Newspaper, MapPin, Phone, Mail, Facebook, Twitter, Instagram } from 'lucide-react';
 import './Landingpage.css';
 import logo from "./logo.png";
 import logo2 from "./logo2.png";
 
 const KrishimitraLanding = () => {
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselImages = [
@@ -76,7 +78,7 @@ const KrishimitraLanding = () => {
   };
 
   const handleLoginClick = () => {
-    alert('Redirecting to login page');
+    navigate('/login');
   };
 
   return (
