@@ -308,7 +308,7 @@ npm start
 | 👨‍💻 **Rohit Yadav** | 👨‍💻 **Parth Patel** | 👨‍💻 **Ganpat Kumawat** |
 |:---:|:---:|:---:|
 | AI/ML Enginner | Integration Specialist | Frontend Engineer |
-| [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rohityadav) | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parthpatel) | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ganpatkumawat) |
+| [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/rohityadav](https://github.com/R0hit-Yadav)) | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/parthpatel](https://github.com/EndlessRunner72)) | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/ganpatkumawat](https://github.com/Ganpat-8903)) |
 
 ### 🎯 **Team Sudarshan**
 *Passionate about solving real-world problems through technology*
